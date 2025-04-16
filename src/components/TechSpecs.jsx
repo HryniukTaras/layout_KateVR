@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react'
-
-import AOS from 'aos'
+import React, { useState } from 'react'
 
 import katVrSpecsMobile from '../assets/katVrSpecsMobile.png'
 import katVrSpecs from '../assets/katVrSpecs.png'
@@ -15,13 +13,6 @@ function TechSpecs() {
     2: 'Wireless: Bluetooth 4.2 Signal range: 5m Receiver: USB 2.0 andabove',
     3: 'Type: Lthium-lon polymer batteries Capacity: 370mAh Battery life: 10h of continuous use 150 hours on stand by Charging: Fast charging - 1 hour Charging voltage and current: 5V = 0.5A',
   }
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    })
-  }, [])
 
   return (
     <section data-aos="fade-up" id="tech" className="section-container">

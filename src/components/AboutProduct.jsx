@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import Aos from 'aos'
+import React from 'react'
 
 import { Carousel } from '../shared/Carousel'
 import PlayButton from '../shared/PlayButton'
@@ -9,13 +8,6 @@ import katVrDemo from '../assets/katVrDemo.png'
 import { CarouselProvider } from '../shared/Carousel/CarouselContext'
 
 function AboutProduct() {
-  useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      once: true,
-    })
-  }, [])
-
   return (
     <section
       id="about"

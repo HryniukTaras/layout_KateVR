@@ -12,7 +12,6 @@ import ContactUs from './components/ContactUs'
 import Footer from './components/Footer'
 import { ModalProvider } from './shared/Modal/ModalContext'
 import Modal from './shared/Modal'
-import FaqOnLoad from './shared/Modal/FaqOnLoad'
 import { useEffect } from 'react'
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
   return (
     <ModalProvider>
       <Modal />
-      <FaqOnLoad />
       <Hero />
       <MoreThanGaming />
       <AboutProduct />

@@ -31,8 +31,8 @@ function ContactForm() {
   const handleInput = () => {
     const el = messageRef.current
     if (el) {
-      el.style.height = 'auto' // скинути висоту
-      el.style.height = `${el.scrollHeight}px` // задати нову висоту
+      el.style.height = 'auto'
+      el.style.height = `${el.scrollHeight}px`
     }
   }
 
