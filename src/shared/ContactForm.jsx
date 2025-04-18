@@ -21,7 +21,6 @@ function ContactForm() {
   })
 
   const onSubmit = (data) => {
-    console.log('✅ Form Data:', data)
     alert('Form submitted successfully!')
     reset()
   }
@@ -35,7 +34,6 @@ function ContactForm() {
       el.style.height = `${el.scrollHeight}px`
     }
   }
-
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       {/* Name */}

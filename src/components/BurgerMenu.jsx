@@ -15,6 +15,15 @@ function BurgerMenu({ isOpen, setIsOpen }) {
     { link: 'Help', type: modalTypes.help },
   ]
 
+  // disable scroll when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+    }
+  }, [isOpen])
+
   // detect active section
   useEffect(() => {
     const sections = links.map((id) =>
@@ -63,7 +72,7 @@ function BurgerMenu({ isOpen, setIsOpen }) {
       >
         <nav
           className={classNames(
-            'z-50 fixed top-0 left-0 h-screen w-[80%] bg-background shadow-lg transform transition-transform duration-300 ease-in-out',
+            'z-50 fixed top-0 left-0 h-screen w-full bg-background shadow-lg transform transition-transform duration-300 ease-in-out',
             {
               'translate-x-0': isOpen,
               '-translate-x-full': !isOpen,

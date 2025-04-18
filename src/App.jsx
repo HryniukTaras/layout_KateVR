@@ -1,4 +1,3 @@
-import './App.css'
 // aos animation library
 import 'aos/dist/aos.css'
 import Aos from 'aos'

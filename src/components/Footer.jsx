@@ -7,10 +7,22 @@ import twitter from '../assets/twitter.png'
 import youtube from '../assets/youtube.png'
 
 const socials = [
-  { href: '#', img: facebook, alt: 'facebook' },
-  { href: '#', img: reddit, alt: 'reddit' },
-  { href: '#', img: twitter, alt: 'twitter' },
-  { href: '#', img: youtube, alt: 'youtube' },
+  {
+    href: 'https://www.facebook.com/katvr.global/?locale=uk_UA',
+    img: facebook,
+    alt: 'facebook',
+  },
+  {
+    href: 'https://www.reddit.com/r/KatVR/',
+    img: reddit,
+    alt: 'reddit',
+  },
+  {
+    href: 'https://x.com/katvrwalk/status/1850798691629863152',
+    img: twitter,
+    alt: 'twitter',
+  },
+  { href: 'https://www.youtube.com/@KATVR', img: youtube, alt: 'youtube' },
 ]
 
 function Footer() {
